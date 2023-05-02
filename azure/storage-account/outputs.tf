@@ -56,3 +56,11 @@ output "secondary_web_endpoint" {
 output "identity_id" {
   value = azurerm_storage_account.main.identity.0.principal_id
 }
+
+output "primary_connection_string" {
+  value = azurerm_storage_account.main.primary_connection_string
+}
+
+output "secondary_connection_string" {
+  value = azurerm_storage_account.main.secondary_connection_string
+}
